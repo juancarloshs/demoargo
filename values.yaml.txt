@@ -1,0 +1,8 @@
+#Deployment reference values
+replicaCount: 2  # Número de réplicas
+
+service:
+  type: LoadBalancer  # Tipo de servicio, puedes elegir ClusterIP, NodePort, LoadBalancer
+  port: 80  # Puerto del servicio
+
+resources: {}

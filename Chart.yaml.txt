@@ -1,0 +1,7 @@
+apiVersion: v2
+name: my-app-demo-chart  # Nombre de tu chart
+description: A Helm chart for Kubernetes applications
+version: 0.1.0  # Versión de tu chart
+type: application
+appVersion: "1.0.0"  # Versión de tu aplicación
+

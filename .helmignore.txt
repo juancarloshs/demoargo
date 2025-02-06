@@ -1,0 +1,32 @@
+# Ignorar archivos de configuraciones temporales
+*.bak
+*.tmp
+*.swp
+*.swx
+*~
+
+# Ignorar directorios generados
+/node_modules
+/dist
+/build
+
+# Ignorar archivos de sistemas operativos y de editor
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos de Helm generados
+.chart
+*.tgz
+*.tar.gz
+
+# Ignorar ficheros de dependencias descargadas
+charts/
+
+# Ignorar archivos sensibles (en caso de que no deban estar en el chart)
+*.key
+*.pem
+*.crt
+
+# Ignorar otros ficheros no relevantes para el paquete de Helm
+.idea/
+.vscode/
