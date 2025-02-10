@@ -11,9 +11,9 @@ spec:
   target:
     name: demo-secret-conditional
   dataFrom:
-    -extract:
-      key: secret/demo-secrets
-      conversionStrategy: Default
-      metadataPolicy: None
+    - extract:
+        key: secret/demo-secrets
+        conversionStrategy: Default
+        metadataPolicy: None
       
 {{- end }}
