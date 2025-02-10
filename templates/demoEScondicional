@@ -1,0 +1,18 @@
+{{- if .Values.conditionalEnabled -}}
+apiVersion: external-secrets.io/v1beta1
+kind: ExternalSecret
+metadata:
+  name: demo-secret
+spec:
+  refreshInterval: "30m"
+  secretStoreRef:
+    name: vault-backend
+    kind: SecretStore
+  target:
+    name: demo-secret
+  data:
+  - secretKey: token
+    remoteRef:
+      key: secret/demo-secrets
+      property: cert
+{{- end }}
