@@ -10,9 +10,10 @@ spec:
     kind: SecretStore
   target:
     name: demo-secret-conditional
-  data:
-  - secretKey: token
-    remoteRef:
+  dataFrom:
+    -extract:
       key: secret/demo-secrets
-      property: cert
+      conversionStrategy: Default
+      metadataPolicy: None
+      
 {{- end }}
