@@ -9,7 +9,7 @@ spec:
     name: vault-backend
     kind: SecretStore
   target:
-    name: demo-secret
+    name: demo-secret-conditional
   data:
   - secretKey: token
     remoteRef:
